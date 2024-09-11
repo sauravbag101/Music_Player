@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient( #0F2027ed, #203A43, #2C5364); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+.music-player{
+    background: #00b4db;
+    width: 400px;
+    height: 670px;
+    padding: 0rem 3rem;
+    text-align: center;
+    border-radius: 3rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+nav .circle{
+    border-radius: 50%;
+    /* padding: 11px; */
+    line-height: 45px;
+    width: 3rem;
+    height: 3rem;
+    background: #fff;
+    color: #06a3c6;
+    
+    box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+}
+.song-img{
+    width: 250px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 10px 60px  rgba(255, 26, 26, 0.32);;
+}
+.music-player h1{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 1rem;
+}
+.music-player p{
+    font-weight: 300;
+    color: #ffffff;
+
+}
+#progress{
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none;
+ width: 100%;
+ height: 8px;
+ background: #f3e5ec85;
+ cursor: pointer;
+ border-radius: 0.6rem;
+ margin: 30px 0px;
+
+}
+#progress::-webkit-slider-thumb{
+ -webkit-appearance: none;
+ background: #0e0c0d;
+ width: 2rem;
+ height: 2rem;
+ border-radius: 50%;
+ border: 8px solid #fff;
+ box-shadow: 0 5px 5px rgba(255,26,26,0.22);
+
+}
+
+#progress::-webkit-slider-thumb{
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none;
+ background: #00b4db;  
+ width: 30px;
+ height: 30px;
+ border-radius: 50%;
+ border: 8px solid #fff;
+ box-shadow: 0 5px 5px rgba(255,26,26,0.22);
+}
+
+.controls{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.controls div{
+    width: 3.5rem;
+    height: 3.5rem;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    color: #06a3c6;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(22, 22, 22, 0.22);
+    margin-top: 1rem;
+}
+.controls div:nth-child(2){
+    transform: scale(1.5);
+    color: #06a3c6;
+}
